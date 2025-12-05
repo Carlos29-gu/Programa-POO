@@ -1,22 +1,10 @@
 #Tecnica de POO semana2 Ejemplo
-# Abstracción
-class Animal:
 
-    def hacer_sonido(self):
-        pass
-
-    def nombre(self):
-        pass
-
-    def edad(self):
-        pass
-
-
-# Encapsulamiento
-class Mascota(Animal):
-
+# Abtraccion y Encapsulamiento
+class Mascota:
+#atributos esenciales que vamos usar 
     def __init__(self, nombre, edad):
-        self._nombre = nombre       # Atributos encapsulados
+        self._nombre = nombre       # Atributos que vamos a encapsular
         self._edad = edad
 
     def get_nombre(self):
@@ -27,7 +15,7 @@ class Mascota(Animal):
 
     def set_nombre(self, nombre):
         self._nombre = nombre
-
+# colocamos un if para que la edad no pueda ser negativa 
     def set_edad(self, edad):
         if edad >= 0:
             self._edad = edad
@@ -73,6 +61,7 @@ if __name__ == "__main__":
         print(animal.nombre())
         print(animal.edad())
         print("Sonido:", animal.hacer_sonido())
+    
     
 
                   
