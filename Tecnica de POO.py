@@ -1,3 +1,4 @@
+#Tecnica de POO semana2 Ejemplo
 # Abstracción
 class Animal:
 
@@ -35,6 +36,7 @@ class Mascota(Animal):
 
 
 # Herencia y Polimorfismo
+#heredo los atributos de la clase padre a las clases hijas 
 class Chancho(Mascota):
 
     def hacer_sonido(self):
@@ -59,7 +61,7 @@ class Gallo(Mascota):
         return f"Edad: {self.get_edad()} años"
 
 
-# Programa principal
+# Programa principal 
 if __name__ == "__main__":
 
     chancho = Chancho("Pippo", 7)
@@ -72,14 +74,7 @@ if __name__ == "__main__":
         print(animal.edad())
         print("Sonido:", animal.hacer_sonido())
     
-echo "# Guevara-Programacion-Orientada-a-Objetos" >> README.md 
-git init 
-git add README.md 
-git commit -m "primer commit" 
-git branch -M main 
-git remote add origin https://github.com/Carlos29-gu/Guevara-Programacion-Orientada-a-Objetos.git
- git push -u origin main
-         
+
                   
                   
 
