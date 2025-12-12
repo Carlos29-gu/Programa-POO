@@ -1,21 +1,10 @@
-# Abstracción
-class Animal:
+#Tecnica de POO semana2 Ejemplo
 
-    def hacer_sonido(self):
-        pass
-
-    def nombre(self):
-        pass
-
-    def edad(self):
-        pass
-
-
-# Encapsulamiento
-class Mascota(Animal):
-
+# Abtraccion y Encapsulamiento
+class Mascota:
+#atributos esenciales que vamos usar 
     def __init__(self, nombre, edad):
-        self._nombre = nombre       # Atributos encapsulados
+        self._nombre = nombre       # Atributos que vamos a encapsular
         self._edad = edad
 
     def get_nombre(self):
@@ -26,7 +15,7 @@ class Mascota(Animal):
 
     def set_nombre(self, nombre):
         self._nombre = nombre
-
+# colocamos un if para que la edad no pueda ser negativa 
     def set_edad(self, edad):
         if edad >= 0:
             self._edad = edad
@@ -35,6 +24,7 @@ class Mascota(Animal):
 
 
 # Herencia y Polimorfismo
+#heredo los atributos de la clase padre a las clases hijas 
 class Chancho(Mascota):
 
     def hacer_sonido(self):
@@ -59,7 +49,7 @@ class Gallo(Mascota):
         return f"Edad: {self.get_edad()} años"
 
 
-# Programa principal
+# Programa principal 
 if __name__ == "__main__":
 
     chancho = Chancho("Pippo", 7)
@@ -72,14 +62,17 @@ if __name__ == "__main__":
         print(animal.edad())
         print("Sonido:", animal.hacer_sonido())
     
-echo "# Guevara-Programacion-Orientada-a-Objetos" >> README.md 
-git init 
-git add README.md 
-git commit -m "primer commit" 
-git branch -M main 
-git remote add origin https://github.com/Carlos29-gu/Guevara-Programacion-Orientada-a-Objetos.git
- git push -u origin main
-         
+
+                  
+                  
+
+    
+    
+
+
+
+    
+
                   
                   
 
