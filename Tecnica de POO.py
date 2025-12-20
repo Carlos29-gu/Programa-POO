@@ -62,19 +62,7 @@ if __name__ == "__main__":
         print(animal.edad())
         print("Sonido:", animal.hacer_sonido())
     
-<<<<<<< HEAD
 
-                  
-                  
-
-    
-    
-
-
-
-=======
->>>>>>> 9995476360f330432e35b5c84afffe76b6ad36fc
-    
 
                   
                   
