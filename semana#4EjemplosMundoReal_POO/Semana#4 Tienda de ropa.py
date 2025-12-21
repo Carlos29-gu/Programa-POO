@@ -1,8 +1,10 @@
-#Poo
+#Tienda de ropa
 #=========
+#Una tienda de ropa y diferentes modelos de ropa para cada genero y diseño
 
+#Creamos la clase ropa 
 class Ropa:
-
+#Encapsulamos los siguientes atributos 
     def __init__(self, marca, talla, color):
         self._marca = marca
         self._talla = talla
@@ -19,14 +21,14 @@ class Ropa:
 
     def set_marca(self, marca):
         self._marca = marca
-
+#creamos un if para que la talla sea menor o igual que 1
     def set_talla(self, talla):
         if talla >= 1:
             self._talla = talla
         else:
             print("La talla ingresada es incorrecta")
 
-
+#Creamos las clases hijas que van a heredar los atributos de la clase padre
 class Ropa1(Ropa):
 
     def diseño(self):
@@ -62,7 +64,7 @@ class Ropa2(Ropa):
     def color(self):
         return f"Color: {self.get_color()}"
 
-
+#Creamos el programa principal
 def main():
     ropa_h = Ropa1("Nike", 40, "Negro")
     ropa_m = Ropa2("Zara", 38, "Rojo")
@@ -82,5 +84,7 @@ def main():
     print(ropa_m.color())
 
 
-# Ejecutar programa
+# Ejecutamos el programa
 main()
+
+
