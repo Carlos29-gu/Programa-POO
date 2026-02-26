@@ -1,0 +1,4 @@
+001,Televisor ,5,1200.0
+004,Refrigeradora ,3,567.0
+007,Cocina ,6,356.0
+010,Estufa ,7,430.0
